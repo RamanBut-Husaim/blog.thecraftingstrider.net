@@ -1,0 +1,49 @@
+baseURL: "https://blog.thecraftingstrider.net/"
+languageCode: "en-us"
+title: "The Crafting Strider"
+theme: "kiera"
+
+enableEmoji: true
+rssLimit: 10
+
+disqusShortname: ""      # disqus_shortname
+googleAnalytics: ""      # UA-XXXXXXXX-X
+
+# Highlight options. See https://gohugo.io/content-management/syntax-highlighting/
+pygmentsCodeFences: true # Enable syntax highlighting with GitHub flavoured code fences
+pygmentsStyle: "solarized-dark"
+pygmentsCodefencesGuessSyntax: true
+pygmentsOptions: "linenos=table"
+
+# language support # en / zh-cn / other... translations present in i18n/
+defaultContentLanguage: "en"           # Default language to use
+
+author:
+  name: "Raman But-Husaim"
+  github: "https://github.com/RamanBut-Husaim"
+  gitlab: "https://gitlab.com/Rakkattakka"
+  linkedin: "https://www.linkedin.com/in/raman-b-208093ab/"
+  twitter: "https://twitter.com/rakkattakka"
+
+sitemap:
+  changefreq: monthly
+  filename: sitemap.xml
+  priority: 0.5
+
+menu:
+  main:
+    - identifier: home
+      name: "Home"
+      weight: 10
+      url: "/"
+    - identifier: posts
+      name: "Posts"
+      weight: 20
+      url: "/posts/"
+    - identifier: about
+      name: "About"
+      weight: 40
+      url: "/about/"
+
+params:
+  tagline: "Raman But-Husaim's personal webblog. Ideas, tech articles born through the life of a software engineer"
