@@ -1,0 +1,7 @@
+a.emph {
+    padding: 3px 3px 3px;
+    text-decoration: underline;
+    color: #566473;
+    text-shadow: none;
+    font-weight: 700;
+}
