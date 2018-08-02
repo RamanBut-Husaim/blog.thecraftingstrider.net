@@ -15,6 +15,6 @@ resources:
 
 I've started to play with programming languages in 2009 and since than the interest to computer science has grown stronger. With love to my chosen one, family, music, literature, education and teaching and passion to functional programming, distributed systems and software engineering in general.
 
-You can find me on {{< slink src="https://github.com/RamanBut-Husaim" title="github" class="emph" >}}, {{< slink src="https://gitlab.com/Rakkattakka" title="gitlab" class="emph" >}}, {{< slink="https://twitter.com/rakkattakka" title="twitter" class="emph" >}} and {{< slink src="https://www.linkedin.com/in/raman-b-208093ab/" title="linked in" class="emph" >}}.
+You can find me on {{< slink src="https://github.com/RamanBut-Husaim" title="github" class="emph" >}}, {{< slink src="https://gitlab.com/Rakkattakka" title="gitlab" class="emph" >}}, {{< slink src="https://twitter.com/rakkattakka" title="twitter" class="emph" >}} and {{< slink src="https://www.linkedin.com/in/raman-b-208093ab/" title="linked in" class="emph" >}}.
 
 > "The cosmos is within us. We are made of star-stuff. We are a way for the universe to know itself." C. Sagan
