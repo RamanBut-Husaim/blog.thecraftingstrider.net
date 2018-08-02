@@ -20,10 +20,10 @@ defaultContentLanguage: "en"           # Default language to use
 
 author:
   name: "Raman But-Husaim"
-  github: "https://github.com/RamanBut-Husaim"
-  gitlab: "https://gitlab.com/Rakkattakka"
-  linkedin: "https://www.linkedin.com/in/raman-b-208093ab/"
-  twitter: "https://twitter.com/rakkattakka"
+  github: "RamanBut-Husaim"
+  gitlab: "Rakkattakka"
+  linkedin: "raman-b-208093ab"
+  twitter: "rakkattakka"
 
 sitemap:
   changefreq: monthly

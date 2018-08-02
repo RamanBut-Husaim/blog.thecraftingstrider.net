@@ -4,7 +4,8 @@ date: 2018-07-15T20:42:24-05:00
 lastmod: 2018-07-15T20:42:24-05:00
 draft: false
 description: ""
-tags: ["dotnetweekly"]
+tags:
+  - "dotnetweekly"
 categories: []
 ---
 
