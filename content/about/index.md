@@ -1,9 +1,20 @@
 ---
-title: "About Me"
-date: "2014-04-09"
-draft: false
+title: "Who is this guy?"
+date: "2018-08-02"
 description: ""
 meta: "false"
+resources:
+  - name: avatar
+    src: avatar.jpg
+    title: "Avatar"
 ---
 
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+{{< figure src="avatar.jpg" atl="Raman But-Husaim's Avatar" height="300" class="float" >}}
+
+**My name is Raman But-Husaim and I am a professional software engineer and the author of [DotNet Weekly Series](https://dotnetweekly.gitbook.io/weekly/).**
+
+I've started to play with programming languages in 2009 and from then I've become a faithful adept of this witchery. With love to family, music, literature, education and teaching and passion to functional programming, distributed systems and software engineering in general.
+
+You can find me on [github](https://github.com/RamanBut-Husaim), [gitlab](https://gitlab.com/Rakkattakka), [twitter](https://twitter.com/rakkattakka) and [linked in](https://www.linkedin.com/in/raman-b-208093ab/).
+
+> "The cosmos is within us. We are made of star-stuff. We are a way for the universe to know itself." C. Sagan
