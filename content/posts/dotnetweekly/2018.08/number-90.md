@@ -20,6 +20,8 @@ categories: []
 1. [Web Assembly and Blazor - Re-assembling the Web](https://weblog.west-wind.com/posts/2018/Jul/31/Web-Assembly-and-Blazor-Reassembling-the-Web)
 1. [AWS Lambda Warmer as Pulumi Component](https://mikhail.io/2018/08/aws-lambda-warmer-as-pulumi-component/)
 
+<!--more-->
+
 ## Tooling & Libraries
 
 1. [xUnit.net 2.4 Released](https://xunit.github.io/releases/2.4)
