@@ -28,3 +28,13 @@ HUGO_VERSION = "0.46"
 
 [context.next.environment]
 HUGO_ENABLEGITINFO = "true"
+
+[[headers]]
+  for = "/*" # This defines which paths this specific [[headers]] block will cover.
+  [headers.values]
+      X-Frame-Options = "sameorigin"
+      Content-Security-Policy = "default-src 'self'; font-src 'self' https://cdnjs.cloudflare.com https://fonts.gstatic.com; frame-src 'none'; media-src 'none'; object-src 'none'; style-src 'self' https://cdnjs.cloudflare.com https://fonts.googleapis.com; worker-src 'none'"
+      X-XSS-Protection = "1; mode=block"
+      X-Content-Type-Options = "nosniff"
+      Referrer-Policy = "strict-origin-when-cross-origin"
+      Feature-Policy = "accelerometer 'none'; autoplay 'self'; camera 'none'; geolocation 'none'; gyroscope 'none'; magnetometer 'none'; microphone 'none'; midi 'none'; payment 'none'; speaker 'none'; usb 'none'"
