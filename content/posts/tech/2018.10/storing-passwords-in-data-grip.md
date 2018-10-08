@@ -1,7 +1,6 @@
 +++
 title = "DataGrip password management on KDE and OpenSUSE"
 date = 2018-09-30T21:05:32+03:00
-draft = true
 tags = ["tools", "linux"]
 categories = []
 +++
@@ -39,7 +38,7 @@ Personally I prefer [long syntax](https://docs.docker.com/compose/compose-file/#
 
 When the `docker-compose` file was successfully launched I've tried to connect to it using `DataGrip`. The procedure is quite intuitive and straightforward on MacOS/Windows machines that I've used previously. At least in standard configuration. The connection screen may look something like this.
 
-**TODO: Insert Image From Linux Machine**
+{{< figure src="/posts/tech/2018.10/storing_passwords_in_data_grip_01.png" alt="SQL Server Connection in DataGrip" height="400" >}}
 
 Completing a form and verifying connection took me a couple of minutes. After that I've refreshed the database list without expecting any difficulties and suddenly they occurred. To my surprise any server-related action (refreshing db list, loading tables, etc.) made `DataGrip` open credentials window and ask for my password. I've tried to restart `DataGrip`, re-enter creds, recreate a connection event though there was nothing special the sql server container logs. No success.
 
@@ -50,7 +49,7 @@ Previously I've faced a couple of issues with `JetBrains` products and there was
 + native creds management solution that is selected by default;
 + using [KeePass](https://keepass.info/) database;
 
-**TODO: Screenshot with options**
+{{< figure src="/posts/tech/2018.10/storing_passwords_in_data_grip_02.png" alt="Password Configuration in DataGrip" height="400" >}}
 
 KeePass... I'm a big fan of this really amazing product and use them across all the devices (mac, desktop, android). There is a security note about using `keepass` database (encrypted storage) and it is up to you what path to follow. For my particular case (storing dev db creds) this plays nice without any encryption so I've moved forward with standard setup and the issue with creds was finally resolved!
 
