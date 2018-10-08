@@ -1,5 +1,5 @@
 +++
-title = "DataGrip password management on KDE and OpenSUSE"
+title = "DataGrip password management in KDE and OpenSUSE"
 date = 2018-09-30T21:05:32+03:00
 tags = ["tools", "linux"]
 categories = []
