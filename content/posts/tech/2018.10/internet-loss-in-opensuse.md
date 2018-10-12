@@ -1,7 +1,6 @@
 +++
 title = "Internet issues in OpenSUSE"
 date = 2018-10-12T21:58:12+03:00
-draft = true
 tags = ["linux"]
 categories = []
 +++
