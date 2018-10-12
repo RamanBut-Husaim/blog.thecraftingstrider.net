@@ -1,5 +1,5 @@
 +++
-title = "Internet issues in OpenSUSE"
+title = "Internet issue in OpenSUSE"
 date = 2018-10-12T21:58:12+03:00
 tags = ["linux"]
 categories = []
