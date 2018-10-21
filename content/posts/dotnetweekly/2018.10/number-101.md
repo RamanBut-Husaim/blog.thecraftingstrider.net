@@ -1,5 +1,5 @@
 ---
-title: "NET Weekly #101 (15.10 - 21.10)"
+title: ".NET Weekly #101 (15.10 - 21.10)"
 date: 2018-10-21T22:04:44+03:00
 tags:
   - "dotnetweekly"
