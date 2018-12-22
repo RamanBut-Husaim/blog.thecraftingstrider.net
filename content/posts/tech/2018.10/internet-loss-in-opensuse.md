@@ -12,7 +12,7 @@ And today became one of these interesting days. **No internet**. Quite straightf
 - [x] The router is turned one.
 - [x] The internet is available on MacBook and mobile phone.
 - [x] Mac and phone are using Wi-Fi and PC connects with ethernet cable so I've verified whether it stays firmly in the socket on both end - router and PC.
-- [x] Reboot. The hope is lot. Or...
+- [x] Reboot. The hope is lost. Or...
 - [x] Reboot in Windows. Everything is fine then the source of evil is inside my openSUSE distribution.
 - [x] Start googling.
 
@@ -20,7 +20,7 @@ One of the top links in the search results was a similar issue from openSUSE for
 
 {{< figure src="/posts/tech/2018.10/internet-loss-in-opensuse_01.png" alt="Ping results" >}}
 
-One of the forum members advices to remove `etc/resolve.conf`. This approach did not help the author of the issue but I've decided to read about this file and give it a try. Seems that [resolv.conf](https://en.wikipedia.org/wiki/Resolv.conf) is the file used for DNS resolver configuration in OS. If this file does not exist and DHCP is enabled OS recreates it after the restart. Ok. Let's try then.
+One of the forum members suggested to remove `etc/resolve.conf`. This approach did not help the author of the issue but I've decided to read about this file and give it a try. Seems that [resolv.conf](https://en.wikipedia.org/wiki/Resolv.conf) is the file used for DNS resolver configuration in OS. If this file does not exist and DHCP is enabled OS recreates it after the restart. Ok. Let's try then.
 
 ```sh
 sudo rm /etc/resolve.conf
