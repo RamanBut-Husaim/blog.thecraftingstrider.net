@@ -6,8 +6,8 @@ theme: "kiera"
 enableEmoji: true
 rssLimit: 10
 
-disqusShortname: ""      # disqus_shortname
-googleAnalytics: ""      # UA-XXXXXXXX-X
+disqusShortname: "" # disqus_shortname
+googleAnalytics: "" # UA-XXXXXXXX-X
 
 # Highlight options. See https://gohugo.io/content-management/syntax-highlighting/
 pygmentsCodeFences: true # Enable syntax highlighting with GitHub flavoured code fences
@@ -16,7 +16,7 @@ pygmentsCodefencesGuessSyntax: true
 pygmentsOptions: "linenos=table"
 
 # language support # en / zh-cn / other... translations present in i18n/
-defaultContentLanguage: "en"           # Default language to use
+defaultContentLanguage: "en" # Default language to use
 
 author:
   name: "Raman But-Husaim"
@@ -47,3 +47,6 @@ menu:
 
 params:
   tagline: "Raman But-Husaim's personal webblog. Ideas, tech articles born through the life of a software engineer"
+  assets:
+    customCSS:
+      - "css/custom.css"
