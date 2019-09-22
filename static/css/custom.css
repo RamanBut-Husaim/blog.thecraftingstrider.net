@@ -5,3 +5,11 @@ a.emph {
     text-shadow: none;
     font-weight: 700;
 }
+
+article a {
+    padding: 3px 3px 3px;
+    text-decoration: underline;
+    color: #566473;
+    text-shadow: none;
+    font-weight: 700;
+}
