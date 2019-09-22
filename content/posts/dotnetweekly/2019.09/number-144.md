@@ -5,8 +5,6 @@ tags = []
 categories = []
 +++
 
-<!--more-->
-
 ## Cloud & Web
 
 1. [AWS Fargate Deep Dive - What it is, when to use it and comparison with AWS Lambda and ECS](https://www.learnaws.org/2019/09/14/deep-dive-aws-fargate/)
@@ -17,6 +15,8 @@ categories = []
 1. [Amazon S3 introduces Same-Region Replication](https://aws.amazon.com/about-aws/whats-new/2019/09/amazon-s3-introduces-same-region-replication/)
 1. [Announcing Azure Private Link](https://azure.microsoft.com/en-us/blog/announcing-azure-private-link/)
 1. [Running async tasks on app startup in ASP.NET Core 3.0](https://andrewlock.net/running-async-tasks-on-app-startup-in-asp-net-core-3/)
+
+<!--more-->
 
 ## Tooling & Libraries
 
