@@ -1,7 +1,6 @@
 +++
 title = "Visual Studio Code, line endings and a bash script"
 date = 2019-09-22T16:30:18+03:00
-draft = true
 tags = ["bash", "azure devops"]
 categories = []
 +++
