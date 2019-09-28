@@ -1,0 +1,116 @@
+{
+  // See https://go.microsoft.com/fwlink/?LinkId=733558
+  // for the documentation about the tasks.json format
+  "version": "2.0.0",
+  "tasks": [{
+      "label": "build hugo (staging)",
+      "type": "shell",
+      "command": "hugo -b https://blog-thecraftingstrider-stg.rakkattakka.workers.dev",
+      "group": "build",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared",
+        "showReuseMessage": true,
+        "clear": false
+      }
+    },
+    {
+      "label": "build wrangler (staging)",
+      "type": "shell",
+      "command": "wrangler build --env staging",
+      "group": "build",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared",
+        "showReuseMessage": true,
+        "clear": false
+      }
+    },
+    {
+      "label": "build (staging)",
+      "group": "build",
+      "dependsOn": [
+        "build hugo (staging)",
+        "build wrangler (staging)"
+      ],
+      "dependsOrder": "sequence",
+      "problemMatcher": []
+    },
+    {
+      "label": "publish (staging)",
+      "type": "shell",
+      "command": "wrangler publish --env staging",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared",
+        "showReuseMessage": true,
+        "clear": false
+      },
+      "dependsOn": [
+        "build (staging)"
+      ],
+      "problemMatcher": []
+    },
+    {
+      "label": "build hugo (prd)",
+      "type": "shell",
+      "command": "hugo -b https://blog.thecraftingstrider.net",
+      "group": "build",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared",
+        "showReuseMessage": true,
+        "clear": false
+      }
+    },
+    {
+      "label": "build wrangler (prd)",
+      "type": "shell",
+      "command": "wrangler build --env production",
+      "group": "build",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared",
+        "showReuseMessage": true,
+        "clear": false
+      }
+    },
+    {
+      "label": "build (prd)",
+      "group": "build",
+      "dependsOn": [
+        "build hugo (prd)",
+        "build wrangler (prd)"
+      ],
+      "dependsOrder": "sequence",
+      "problemMatcher": []
+    },
+    {
+      "label": "publish (prd)",
+      "type": "shell",
+      "command": "wrangler publish --env production",
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared",
+        "showReuseMessage": true,
+        "clear": false
+      },
+      "dependsOn": [
+        "build (prd)"
+      ],
+      "problemMatcher": []
+    }
+  ]
+}

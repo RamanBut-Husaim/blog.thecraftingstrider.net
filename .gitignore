@@ -10,3 +10,6 @@ $RECYCLE.BIN/
 
 # OSX
 .DS_Store
+
+# workers-site
+/dist

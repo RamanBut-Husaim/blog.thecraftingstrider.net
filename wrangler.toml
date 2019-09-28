@@ -1,0 +1,26 @@
+account_id = "b138d2341f0cb1ff2160762e647f1621"
+name = "blog-thecraftingstrider"
+type = "webpack"
+workers_dev = true
+kv-namespaces = [
+  { binding = "KV", id = "0c7784330d7c42d08cc79db1ca86b713" }
+]
+
+[site]
+bucket = "./public"
+entry-point = "workers-site"
+
+[env.staging]
+name = "blog-thecraftingstrider-stg"
+kv-namespaces = [
+  { binding = "KV", id = "9cc2f49e2bdd4d358ea5e3df8edae6fe" }
+]
+
+[env.production]
+workers_dev = false
+name = "blog-thecraftingstrider-prd"
+zone_id = "62e04a3c74006a1fe79e4cb3f915436d"
+route = "blog.thecraftingstrider.net/*"
+kv-namespaces = [
+  { binding = "KV", id = "a2454a0ad1f840519417ab49445f671e" }
+]
