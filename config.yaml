@@ -47,6 +47,12 @@ menu:
 
 params:
   tagline: "Raman But-Husaim's personal webblog. Ideas, tech articles born through the life of a software engineer"
+  description: "Raman But-Husaim's personal webblog."
+  openGraph:
+    title: "Raman But-Husaim's personal webblog."
+    type: "website"
+    description: "Raman But-Husaim's personal webblog."
+    image: "/about/avatar.jpg"
   assets:
     customCSS:
       - "css/custom.css"
