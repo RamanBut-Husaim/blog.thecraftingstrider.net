@@ -3,6 +3,7 @@ title = ".NET Weekly #137 (29.07 - 04.08)"
 date = 2019-08-04T19:29:22+03:00
 tags = ['dotnetweekly']
 categories = []
+openGraphType = "article"
 +++
 
 ## Cloud & Web
