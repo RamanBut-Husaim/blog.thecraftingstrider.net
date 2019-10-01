@@ -4,6 +4,7 @@ date: 2018-12-23T00:43:47+03:00
 tags:
   - 'dotnetweekly'
 categories: []
+openGraphType: 'article'
 ---
 
 ## Cloud & Web

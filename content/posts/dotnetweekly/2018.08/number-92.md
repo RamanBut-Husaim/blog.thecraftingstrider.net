@@ -1,9 +1,10 @@
 ---
-title: ".NET Weekly #92 (13.08 - 19.08)"
+title: '.NET Weekly #92 (13.08 - 19.08)'
 date: 2018-08-18T22:05:49+03:00
 tags:
-  - "dotnetweekly"
+  - 'dotnetweekly'
 categories: []
+openGraphType: 'article'
 ---
 
 ## Cloud & Web
@@ -47,7 +48,7 @@ categories: []
 1. [A Visitor functor](http://blog.ploeh.dk/2018/08/13/a-visitor-functor/)
 1. [Are static methods faster in execution compared to instance methods (.NET)?](https://www.tabsoverspaces.com/233660-are-static-methods-faster-in-execution-compared-to-instance-methods-dotnet)
 1. [Null pointers - an opportunity, not an exception – Code smells series](https://blog.jetbrains.com/dotnet/2018/08/13/null-pointers-opportunity-not-exception-code-smells-series/)
-1. [Seeding Related Entities in EF Core 2.1's HasData()](https://wildermuth.com/2018/08/12/Seeding-Related-Entities-in-EF-Core-2-1-s-HasData())
+1. [Seeding Related Entities in EF Core 2.1's HasData()](<https://wildermuth.com/2018/08/12/Seeding-Related-Entities-in-EF-Core-2-1-s-HasData()>)
 1. [Announcing F# 4.5](https://blogs.msdn.microsoft.com/dotnet/2018/08/14/announcing-f-4-5/)
 1. [Randomness in .NET](https://lowleveldesign.org/2018/08/15/randomness-in-net/)
 1. [Creating typings for curry using TS 3.x](https://medium.com/@hernanrajchert/creating-typings-for-curry-using-ts-3-x-956da2780bbf)

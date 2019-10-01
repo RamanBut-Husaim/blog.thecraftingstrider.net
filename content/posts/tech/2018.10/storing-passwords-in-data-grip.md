@@ -3,16 +3,17 @@ title = "DataGrip password management in KDE and OpenSUSE"
 date = 2018-09-30T21:05:32+03:00
 tags = ["tools", "linux"]
 categories = []
+openGraphType = "article"
 +++
 
 Today was the first time when I tried to launch [JetBrains DataGrip](https://www.jetbrains.com/datagrip/) on my KDE-based OpenSUSE distro that I'm actively using for development at home. Why I'm trying to reduce the usage of win 10 as much as possible is a separate story but anyway. As part of the home project that I'm involved in we are using [MSSQL Server 2017 for Linux](https://www.microsoft.com/en-us/sql-server/sql-server-2017) that could be easily started in [Docker](https://www.docker.com/). Using `DataGrip` with such setup is quite straightforward however there is one pitfall related to how `DataGrip` stores passwords. Here is the brief overview.
 
 ## Launching SQL Server for Linux
 
- `docker-compose` file is my preferred way to work with `docker` (even with single service) as it allows me to avoid memorizing the whole set of command-line arguments that could be difficult to reproduce. The docker-compose file looks something like this
+`docker-compose` file is my preferred way to work with `docker` (even with single service) as it allows me to avoid memorizing the whole set of command-line arguments that could be difficult to reproduce. The docker-compose file looks something like this
 
 ```yml
-version: "3.5"
+version: '3.5'
 services:
   sql-server-dev:
     image: microsoft/mssql-server-linux:2017-latest
@@ -22,19 +23,18 @@ services:
         protocol: tcp
         mode: host
     environment:
-      ACCEPT_EULA: "Y"
-      MSSQL_SA_PASSWORD: "my_Aw3s0me_Pwd"
+      ACCEPT_EULA: 'Y'
+      MSSQL_SA_PASSWORD: 'my_Aw3s0me_Pwd'
     volumes:
       - type: volume
         source: sql-server-data
         target: /var/opt/mssql
-volumes:
-  sql-server-data:
+volumes: sql-server-data:
 ```
 
 Personally I prefer [long syntax](https://docs.docker.com/compose/compose-file/#compose-file-structure-and-examples) as it gives much more clarity on what's going on. Especially in cases when you or your team do not work with `docker` on regular basis. It is much easier to read and understand `docker-compose` file that uses such descriptive names.
 
-## Connecting to SQL Server using *DataGrip*
+## Connecting to SQL Server using _DataGrip_
 
 When the `docker-compose` file was successfully launched I've tried to connect to it using `DataGrip`. The procedure is quite intuitive and straightforward on MacOS/Windows machines that I've used previously. At least in standard configuration. The connection screen may look something like this.
 
@@ -46,8 +46,8 @@ Next step - start to [duckduckgoling](https://duckduckgo.com/) the issue and suc
 
 Previously I've faced a couple of issues with `JetBrains` products and there was always a workaround if something did not work. So the first idea was to look in `DataGrip` settings and verify what other options are provided to control the creds storage. There are two of them available out of the box:
 
-+ native creds management solution that is selected by default;
-+ using [KeePass](https://keepass.info/) database;
+- native creds management solution that is selected by default;
+- using [KeePass](https://keepass.info/) database;
 
 {{< figure src="/posts/tech/2018.10/storing_passwords_in_data_grip_02.png" alt="Password Configuration in DataGrip" height="400" >}}
 
@@ -55,4 +55,4 @@ KeePass... I'm a big fan of this really amazing product and use them across all 
 
 That's it. Happy coding!
 
-*PS:* `DataGrip` [issue](https://youtrack.jetbrains.com/issue/DBE-6402) contains a reply from `Vasily Chernov` - a `JetBrains` guy who advised to use `KeePass` as a temporary solution as well. Though it is unclear when it will be done. I've upvoted the issue (to get notifications) and advise everyone to do this as it increase the chance to get the issues fixed sooner.
+_PS:_ `DataGrip` [issue](https://youtrack.jetbrains.com/issue/DBE-6402) contains a reply from `Vasily Chernov` - a `JetBrains` guy who advised to use `KeePass` as a temporary solution as well. Though it is unclear when it will be done. I've upvoted the issue (to get notifications) and advise everyone to do this as it increase the chance to get the issues fixed sooner.

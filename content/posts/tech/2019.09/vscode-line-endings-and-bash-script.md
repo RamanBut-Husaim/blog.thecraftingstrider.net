@@ -3,6 +3,7 @@ title = "Visual Studio Code, line endings and a bash script"
 date = 2019-09-22T16:30:18+03:00
 tags = ["bash", "azure devops"]
 categories = []
+openGraphType = "article"
 +++
 
 As part of the home project that I'm working on we actively use [Azure DevOps](https://azure.microsoft.com/en-us/services/devops/) to store the source code and run quite simple CI. Recently I've customized the pipeline to run API tests as part of the build process. In order to do this I had to create a bunch of `bash`-scripts and faced an issue with line endings for such files.
@@ -22,19 +23,20 @@ A `bash`-script is quite straightforward by its nature however it took me a coup
 ```sh
 echo "waiting for the API service to start"
 ATTEMPT=1
-while [ "$(curl -sL -o /dev/null -w ''%{http_code}'' localhost:16200/health)" != "200" ]
+ATTEMPT_LIMIT=30
+while [ "$(curl -sL -o /dev/null -w ''%{http_code}'' localhost:7000/health)" != "200" ]
 do
-    if [$ATTEMPT -gt 10]
-        then
-            echo "service is unhealthy, number of attempts=$ATTEMPT is exceeded"
-            exit 1
+    if [ "$ATTEMPT" -gt "$ATTEMPT_LIMIT" ]; then
+        echo "service is unhealthy, number of attempts=$ATTEMPT is exceeded"
+        exit 1
     fi
 
-    echo "service is unhealthy, attempt=$ATTEMPT, sleeping for 1 second"
+    echo "attempt=$ATTEMPT, sleeping for 1 second"
     sleep 1
     ATTEMPT=$[$ATTEMPT + 1]
 done
-echo "service is healthy, number of attempts=$ATTEMPT"
+
+echo "service is healthy, attempts=$ATTEMPT"
 ```
 
 Prior to commit the changes and verify them in the cloud I've decided to test the script locally. Due to the local `zsh`-by-default setup I've launched the following command `bash test-health-check.sh`. The output was `test-health-check.sh: line 16: syntax error: unexpected end of file`.
@@ -47,7 +49,7 @@ The strange thing was that when I've tried to change it to `LF` and save the fil
 
 ## Solution
 
-Given some more though on the topic the solution came to my mind. I\m fan of [editorconfig](https://editorconfig.org/) and try to use it on every project that I'm working on. `VSCode` knows how to work with `editorconfig` properly with the help of [official extension](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig). The solution is to extend the `.editorconfig` file in the folder by adding the following lines:
+Given some more though on the topic the solution came to my mind. I'm fan of [editorconfig](https://editorconfig.org/) and try to use it on every project that I'm working on. `VSCode` knows how to work with `editorconfig` properly with the help of [official extension](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig). The solution is to extend the `.editorconfig` file in the folder by adding the following lines:
 
 ```ini
 [*.sh]

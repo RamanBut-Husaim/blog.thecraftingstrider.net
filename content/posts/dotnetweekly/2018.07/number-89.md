@@ -1,11 +1,12 @@
 ---
-title: ".NET Weekly #89 (09.07 - 15.07)"
+title: '.NET Weekly #89 (09.07 - 15.07)'
 date: 2018-07-15T20:42:24-05:00
 lastmod: 2018-07-15T20:42:24-05:00
-description: ""
+description: ''
 tags:
-  - "dotnetweekly"
+  - 'dotnetweekly'
 categories: []
+openGraphType: 'article'
 ---
 
 ## Cloud & Web
@@ -15,7 +16,7 @@ categories: []
 1. [HttpClientFactory in ASP.NET Core 2.1 (Part 5) - Logging](https://www.stevejgordon.co.uk/httpclientfactory-asp-net-core-logging)
 1. [Adding validation to strongly typed configuration objects in ASP.NET Core](https://andrewlock.net/adding-validation-to-strongly-typed-configuration-objects-in-asp-net-core/)
 1. [Comparing Serverless Performance for CPU Bound Tasks](https://blog.cloudflare.com/serverless-performance-with-cpu-bound-tasks/?h)
-1. [For E-Commerce Data Scientists  Lessons Learned Scraping 100 Billion Products Pages](https://blog.scrapinghub.com/web-scraping-at-scale-lessons-learned-scraping-100-billion-products-pages)
+1. [For E-Commerce Data Scientists Lessons Learned Scraping 100 Billion Products Pages](https://blog.scrapinghub.com/web-scraping-at-scale-lessons-learned-scraping-100-billion-products-pages)
 1. [Using Pulumi with AWS SQS and Lambdas](http://blog.pulumi.com/using-pulumi-with-aws-sqs-and-lambdas)
 1. [Getting Started with AWS Lambda in Pulumi](https://mikhail.io/2018/07/getting-started-with-aws-lambda-in-pulumi/)
 1. [Overriding externally set headers and HTTP status codes in ASP.NET Core](https://www.strathweb.com/2018/07/overriding-externally-set-headers-and-http-status-codes-in-asp-net-core/)
