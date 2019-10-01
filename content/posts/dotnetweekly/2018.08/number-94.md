@@ -1,9 +1,10 @@
 ---
-title: ".NET Weekly #94 (27.08 - 02.09)"
+title: '.NET Weekly #94 (27.08 - 02.09)'
 date: 2018-09-02T13:55:10+03:00
 tags:
-  - "dotnetweekly"
+  - 'dotnetweekly'
 categories: []
+openGraphType: 'article'
 ---
 
 ## Cloud & Web

@@ -1,9 +1,10 @@
 ---
-title: ".NET Weekly #96 (10.09 - 16.09)"
+title: '.NET Weekly #96 (10.09 - 16.09)'
 date: 2018-09-16T22:56:30+01:00
 tags:
-  - "dotnetweekly"
+  - 'dotnetweekly'
 categories: []
+openGraphType: 'article'
 ---
 
 ## Cloud & Web
@@ -15,7 +16,7 @@ categories: []
 1. [ASP.NET Core 2.2.0-preview2 now available](https://blogs.msdn.microsoft.com/webdev/2018/09/12/asp-net-core-2-2-0-preview2-now-available/)
 1. [8 steps to building your own serverless GraphQL API using AWS Amplify](https://read.acloud.guru/8-steps-to-building-your-own-serverless-graphql-api-using-aws-amplify-42c21770424d)
 1. [Goodbye Redux](https://hackernoon.com/goodbye-redux-26e6a27b3a0b)
-1. [The danger of target=_blank and opener](https://www.pixelstech.net/article/1537002042-The-danger-of-target%3D_blank-and-opener)
+1. [The danger of target=\_blank and opener](https://www.pixelstech.net/article/1537002042-The-danger-of-target%3D_blank-and-opener)
 
 <!--more-->
 

@@ -1,9 +1,10 @@
 ---
-title: ".NET Weekly #104 (05.11 - 11.11)"
+title: '.NET Weekly #104 (05.11 - 11.11)'
 date: 2018-11-11T20:44:12+03:00
 tags:
-  - "dotnetweekly"
+  - 'dotnetweekly'
 categories: []
+openGraphType: 'article'
 ---
 
 # Cloud & Web
