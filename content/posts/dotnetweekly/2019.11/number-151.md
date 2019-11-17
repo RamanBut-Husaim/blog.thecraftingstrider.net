@@ -1,7 +1,7 @@
 +++
 title = ".NET Weekly #151 (11.11 - 17.11)"
 date = 2019-11-17T19:26:30+03:00
-tags = []
+tags = ['dotnetweekly']
 categories = []
 openGraphType = "article"
 +++
