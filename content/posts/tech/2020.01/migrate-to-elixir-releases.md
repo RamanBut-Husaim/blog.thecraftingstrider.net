@@ -1,6 +1,6 @@
 +++
 title = "How I migrated my pet project from distillery to elixir releases"
-date = 2020-01-05T18:48:01+03:00
+date = 2020-01-11T18:48:01+03:00
 tags = ["elixir", "beam"]
 categories = []
 openGraphType = "article"
@@ -118,7 +118,7 @@ The changes in the CI were required as `distillery` and `mix release` differ in 
 
 - by default `distillery` creates a tarball; `mix release` do not though it is possible;
 - the folder structure is slightly different in `distillery` and `mix release`;
-- the commands to start the application are different as well;
+- the commands to start the application are different as well.
 
 ### Tarball
 
