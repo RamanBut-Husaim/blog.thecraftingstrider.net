@@ -39,6 +39,10 @@ menu:
       name: "Posts"
       weight: 20
       url: "/posts/"
+    - identifier: tags
+      name: "Tags"
+      weight: 30
+      url: "/tags/"
     - identifier: about
       name: "About"
       weight: 40
