@@ -6,7 +6,7 @@ categories = []
 openGraphType = "article"
 +++
 
-The next issue will appear in late Feb - early Mar as my vacation is approaching.
+The next issue will appear in late Feb - early Mar as my vacation is approaching :).
 
 ## Cloud & Web
 
