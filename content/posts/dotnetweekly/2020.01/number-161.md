@@ -6,6 +6,8 @@ categories = []
 openGraphType = "article"
 +++
 
+The next issue will appear in late Feb - early Mar as my vacation is approaching.
+
 ## Cloud & Web
 
 1. [React Native is the Future of Mobile at Shopify](https://engineering.shopify.com/blogs/engineering/react-native-future-mobile-shopify)
