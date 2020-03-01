@@ -19,6 +19,8 @@ A little bit overwhelming number of articles for the last couple of weeks that I
 1. [ASP.NET Core middleware with Roslyn Analyzers - Part 1](https://blog.elmah.io/asp-net-core-middleware-with-roslyn-analyzers-part-1/)
 1. [Add support for ASP.NET (non-Core) projects - new stuff](https://github.com/dotnet/project-system/issues/2670)
 
+<!--more-->
+
 ## Tooling & Libraries
 
 1. [A new hash algorithm for Git](https://lwn.net/Articles/811068/)
