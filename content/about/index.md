@@ -9,7 +9,7 @@ resources:
     title: 'Avatar'
 ---
 
-{{< figure src="avatar.jpg" atl="Raman But-Husaim's Avatar" height="300" class="float" >}}
+{{< figure src="avatar.jpg" alt="Raman But-Husaim's Avatar" height="300" class="float" >}}
 
 **My name is Raman But-Husaim and I am a professional software engineer and the author of [dotnet weekly series](https://dotnetweekly.gitbook.io/weekly/).**
 
