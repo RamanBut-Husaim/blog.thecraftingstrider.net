@@ -1,17 +1,22 @@
 account_id = "b138d2341f0cb1ff2160762e647f1621"
 name = "blog-thecraftingstrider"
-type = "webpack"
 workers_dev = true
+compatibility_date = "2023-05-13"
+main = "workers-site/index.js"
+
+# `ENVIRONMENT` is defined for future use
+vars = { ENVIRONMENT = "dev" }
 
 [site]
 bucket = "./public"
-entry-point = "workers-site"
 
 [env.staging]
+vars = { ENVIRONMENT = "staging" }
 name = "blog-thecraftingstrider-stg"
 
 [env.production]
 workers_dev = false
+vars = { ENVIRONMENT = "production" }
 name = "blog-thecraftingstrider-prd"
 zone_id = "62e04a3c74006a1fe79e4cb3f915436d"
 route = "blog.thecraftingstrider.net/*"
