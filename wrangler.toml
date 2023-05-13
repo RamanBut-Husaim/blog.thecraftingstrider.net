@@ -18,5 +18,4 @@ name = "blog-thecraftingstrider-stg"
 workers_dev = false
 vars = { ENVIRONMENT = "production" }
 name = "blog-thecraftingstrider-prd"
-zone_id = "62e04a3c74006a1fe79e4cb3f915436d"
 route = "blog.thecraftingstrider.net/*"

@@ -20,9 +20,7 @@ defaultContentLanguage: "en" # Default language to use
 author:
   name: "Raman But-Husaim"
   github: "RamanBut-Husaim"
-  gitlab: "Rakkattakka"
   linkedin: "raman-b-208093ab"
-  twitter: "rakkattakka"
 
 sitemap:
   changefreq: monthly
@@ -51,11 +49,9 @@ menu:
 params:
   tagline: "Raman But-Husaim's personal webblog. Ideas, tech articles born through the life of a software engineer"
   description: "Raman But-Husaim's personal webblog."
+  favicon: "/favicon.ico"
+  title: "Raman But-Husaim's personal webblog."
+  customCSS: ["css/custom.css"]
   openGraph:
-    title: "Raman But-Husaim's personal webblog."
-    type: "website"
     description: "Raman But-Husaim's personal webblog."
     image: "/about/avatar.jpg"
-  assets:
-    customCSS:
-      - "css/custom.css"
