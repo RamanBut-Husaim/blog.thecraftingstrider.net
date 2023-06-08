@@ -1,5 +1,4 @@
 baseURL: "https://blog.thecraftingstrider.net/"
-languageCode: "en-us"
 title: "The Crafting Strider"
 theme: "kiera"
 
@@ -14,6 +13,48 @@ pygmentsOptions: "linenos=table"
 # language support # en / zh-cn / other... translations present in i18n/
 defaultContentLanguage: "en" # Default language to use
 
+languages:
+  en:
+    weight: 1
+    languageCode: "en"
+    languageName: "en"
+    menu:
+      main:
+        - name: "Home"
+          weight: 10
+          pageRef: /
+        - name: "Posts"
+          weight: 20
+          pageRef: /posts
+        - name: "Tags"
+          weight: 30
+          pageRef: /tags
+        - name: "About"
+          weight: 40
+          pageRef: /about
+  be:
+    weight: 2
+    languageCode: "be"
+    languageName: "be"
+    title: "The Crafting Strider"
+    params:
+      tagline: "Асабісты блог Рамана Бут-Гусаіма. Думкі і тэхнічныя публікацыі з жыцця распрацоўшчыка праграмнага забеспячэння"
+      description: "Асабісты блог Рамана Бут-Гусаіма"
+    menu:
+      main:
+        - name: "Дамашняя"
+          weight: 10
+          pageRef: /
+        - name: "Публікацыі"
+          weight: 20
+          pageRef: /posts
+        - name: "Цэтлікі"
+          weight: 30
+          pageRef: /tags
+        - name: "Аб аўтары"
+          weight: 40
+          pageRef: /about
+
 author:
   name: "Raman But-Husaim"
   github: "RamanBut-Husaim"
@@ -24,31 +65,11 @@ sitemap:
   filename: sitemap.xml
   priority: 0.5
 
-menu:
-  main:
-    - identifier: home
-      name: "Home"
-      weight: 10
-      url: "/"
-    - identifier: posts
-      name: "Posts"
-      weight: 20
-      url: "/posts/"
-    - identifier: tags
-      name: "Tags"
-      weight: 30
-      url: "/tags/"
-    - identifier: about
-      name: "About"
-      weight: 40
-      url: "/about/"
-
 params:
   tagline: "Raman But-Husaim's personal webblog. Ideas, tech articles born through the life of a software engineer"
-  description: "Raman But-Husaim's personal webblog."
+  description: "Raman But-Husaim's personal webblog"
   favicon: "/favicon.ico"
-  title: "Raman But-Husaim's personal webblog."
   customCSS: ["css/custom.css"]
   openGraph:
-    description: "Raman But-Husaim's personal webblog."
+    description: "Raman But-Husaim's personal webblog"
     image: "/about/avatar.jpg"
