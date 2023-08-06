@@ -4,12 +4,6 @@ theme: "kiera"
 
 enableEmoji: true
 
-# Highlight options. See https://gohugo.io/content-management/syntax-highlighting/
-pygmentsCodeFences: true # Enable syntax highlighting with GitHub flavoured code fences
-pygmentsStyle: "solarized-dark"
-pygmentsCodefencesGuessSyntax: true
-pygmentsOptions: "linenos=table"
-
 # language support # en / zh-cn / other... translations present in i18n/
 defaultContentLanguage: "en" # Default language to use
 
@@ -42,7 +36,7 @@ languages:
       description: "Асабісты блог Рамана Бут-Гусаіма"
     menu:
       main:
-        - name: "Дамашняя"
+        - name: "Хатняя"
           weight: 10
           pageRef: /
         - name: "Публікацыі"

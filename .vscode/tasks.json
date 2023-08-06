@@ -27,9 +27,9 @@
       "problemMatcher": []
     },
     {
-      "label": "publish (staging)",
+      "label": "deploy (staging)",
       "type": "shell",
-      "command": "wrangler publish --env staging",
+      "command": "wrangler deploy --env staging",
       "presentation": {
         "echo": true,
         "reveal": "always",
@@ -67,9 +67,9 @@
       "problemMatcher": []
     },
     {
-      "label": "publish (prd)",
+      "label": "deploy (prd)",
       "type": "shell",
-      "command": "wrangler publish --env production",
+      "command": "wrangler deploy --env production",
       "presentation": {
         "echo": true,
         "reveal": "always",
